@@ -29,7 +29,11 @@ form {
   width: 100%;
   max-width: 400px;
 }
-
+form > div{
+  display: flex;
+      align-items: baseline;
+      gap: 12px;
+}
 
 input[type="text"],
 input[type="email"],
