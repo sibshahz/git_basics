@@ -32,8 +32,15 @@ form {
   flex-direction: column;
 }
 
+
 .form-group {
   margin-bottom: 15px;
+
+form > div{
+  display: flex;
+      align-items: baseline;
+      gap: 12px;
+
 }
 
 label {
@@ -105,3 +112,11 @@ button[type="reset"]:hover {
     box-shadow: none;
   }
 }
+input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover,
+textarea:hover {
+  border-color: black;
+  background-color: #f0f8ff; /* Light blue shade */
+}
+
