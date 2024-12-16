@@ -77,3 +77,11 @@ label {
 div {
   margin-bottom: 15px;
 }
+input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover,
+textarea:hover {
+  border-color: black;
+  background-color: #f0f8ff; /* Light blue shade */
+}
+
