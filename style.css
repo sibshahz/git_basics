@@ -92,5 +92,14 @@ textarea:focus {
   border-color: #00bfff; /* Deep Sky Blue */
   box-shadow: 0 0 5px #00bfff;
 }
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00bfff; /* Deep Sky Blue */
+  box-shadow: 0 0 5px #00bfff;
+}
+
 
 
