@@ -1,4 +1,4 @@
-window.alert('Hello, world!');
+window.alert('Hello, duniya!');
 console.log("This is a special coded message");
 
 document.addEventListener("DOMContentLoaded", () => {

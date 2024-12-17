@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: #f0f8ff; /* Softer background color */
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -8,31 +8,37 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  border: 10px solid black; /* Adjusted the border size */
+  border: 10px solid #333; /* Darker border for contrast */
   box-sizing: border-box;
 }
 
-
 h1 {
-  color: black;
+  color: #333; /* Darker text for contrast */
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3rem; /* Larger title */
+  font-weight: bold;
 }
 
 form {
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border: 2px solid #007BFF; /* Blue border for a clean look */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
+  transition: all 0.3s ease; /* Smooth hover transition for form */
 }
-form > div{
+
+form:hover {
+  transform: scale(1.02); /* Slight hover effect */
+}
+
+form > div {
   display: flex;
-      align-items: baseline;
-      gap: 12px;
+  align-items: baseline;
+  gap: 12px;
 }
 
 input[type="text"],
@@ -40,11 +46,19 @@ input[type="email"],
 select,
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007BFF; /* Highlight on focus */
 }
 
 input::placeholder,
@@ -54,28 +68,31 @@ textarea::placeholder {
 }
 
 button {
-  background-color: black;
+  background-color: #007BFF; /* Blue background for buttons */
   color: white;
   border: none;
-  padding: 10px 15px;
-  margin: 5px;
-  font-size: 1rem;
-  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 button:hover {
-  background-color: #444;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 div {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 input[type="text"]:hover,
 input[type="email"]:hover,
