@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: rgba(145, 245, 106, 0.884);
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  border: 10px solid black; /* Adjusted the border size */
+  border: 10px solid rgb(3, 40, 252); /* Adjusted the border size */
   box-sizing: border-box;
 }
 
@@ -21,8 +21,8 @@ h1 {
 }
 
 form {
-  background-color: white;
-  border: 2px solid black;
+  background-color: rgb(255, 6, 6);
+  border: 2px solid rgb(0, 47, 255);
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -54,8 +54,8 @@ textarea::placeholder {
 }
 
 button {
-  background-color: black;
-  color: white;
+  background-color: rgb(9, 255, 0);
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px 15px;
   margin: 5px;
