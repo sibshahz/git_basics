@@ -10,37 +10,46 @@
 <body>
   <h1>New Assignment by Saad Ubaid</h1>
   <form action="submit-form.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required aria-label="Enter your full name">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required aria-label="Enter your email address">
+      </div>
+
+      <div>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" placeholder="Type to search..." aria-label="Search input field">
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required aria-label="Select your gender">
+          <option value="">-- Select Gender --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." aria-label="Enter your message"></textarea>
+      </div>
+    </fieldset>
 
     <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-    </div>
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    </div>
-    <div>
-      <label for="search">Search:</label>
-      <input type="text" id="search" name="search" placeholder="Search...">
-    </div>
-    <div>
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender" required>
-        <option value="">Select</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" placeholder="Enter your message..."></textarea>
-    </div>
-
-    <div>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
+      <button type="submit" class="btn-submit">Submit</button>
+      <button type="reset" class="btn-reset">Reset</button>
     </div>
   </form>
 </body>
