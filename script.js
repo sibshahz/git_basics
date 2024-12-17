@@ -1,4 +1,4 @@
-window.alert('Hello, world!');
+window.alert('Hello, world! CS-23628');
 console.log("This is a special coded message");
 
 document.addEventListener("DOMContentLoaded", () => {
