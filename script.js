@@ -1,11 +1,8 @@
-window.alert('Hello, world!');
-console.log("This is a special coded message");
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -23,4 +20,3 @@ document.addEventListener("DOMContentLoaded", () => {
     alert(`Thank you, ${name}! Your form has been submitted.`);
   });
 });
-
